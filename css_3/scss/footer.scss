@@ -1,0 +1,24 @@
+
+.footer{
+  margin-right: 2px;
+  text-align: center;
+  background-color: white;
+  margin-top: 50px;
+  &__button {
+    margin-bottom: 5px;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    &--red {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px 12px 45px;
+      background-color:#E53F51;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block;
+    }
+  }
+}

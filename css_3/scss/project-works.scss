@@ -1,0 +1,86 @@
+.project__block{
+  background-color: #ffffff;
+  padding-bottom: 60px;
+  &__works{
+   padding: 40px;
+   &__img{
+    width: 100%;
+    margin-bottom: 20px;
+   }
+    &__work{
+      &__infos{
+         line-height: 24px;
+         display: flex;
+         flex-direction:column;
+         margin-bottom: 20px;
+        &__info{
+          color: #999;
+          text-transform: none;
+          font-size: 15px;
+          &__name{
+            color: #333333;
+            font-family: 'open_sanssemibold',Arial,sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+      
+      &__ligne{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+      }
+      &__button{
+        
+        
+        &__arrow{
+          text-align: center;
+          margin-bottom: 60px;
+          &__herf{
+            color: #efefef;
+            color: #cccccc;
+            font-size: 11px;
+            border: 1px solid #efefef;
+            padding: 5px;
+            border-radius: 25px;
+            height: 38px;
+            width: 38px;
+            margin-right: 6px;
+            display: inline-block;
+            line-height: 26px;
+            &:hover{
+             color: #cd5353;
+            }
+            &__icon{
+
+            }
+          }
+        }
+      }
+      &__wrapper{
+        &__title__study{
+          font-size: 27px;
+          line-height: 40px;
+          letter-spacing: 20px;
+          color: #333333;
+          text-transform: uppercase;
+          font-family: 'open sans',Arial,sans-serif;
+          font-weight: 300;
+
+        }
+        &__parag__study{
+          font-size: 14px;
+          color: #999;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 300;
+          margin: 0;
+          line-height: 22px;
+          margin-top: 20px;
+
+        }
+      }
+    }
+  }
+}

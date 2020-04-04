@@ -1,0 +1,98 @@
+.form__contact{
+	padding: 27px;
+
+  &__input__textes{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #efefef;
+    color: #333;
+    font-size: 11px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 13px;
+    height: 35px;
+    &--textera{
+      height: 160px;
+      font-family: 'open_sansbold',Arial,sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+    }
+  }
+  &__submits{
+  }
+  &__submit{
+    background-color: #cd5353;
+    width: 100%;
+    border-radius: 25px;
+    padding: 9px;
+    border: none;
+    color: #ffffff;
+    position: static;
+    font-family: 'open_sansbold',Arial,sans-serif;
+    font-weight: 700;
+    
+    font-size: 10px;
+    &:hover{
+      background: #33373d;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+  
+
+  @media (min-width: 480px){
+    &__block{
+      display: flex;
+    }
+    &__input__textes{
+      &--left{
+        margin-right: 10px;
+      }
+    
+      &__texte{
+        margin-right: 10px;
+      }
+    
+    }
+    &__submits{
+      position: relative;
+      text-align: right;
+        &:after{
+        height: 36px;
+        width: 29%;
+        position: absolute;
+        content: "";
+        right:36px;
+        top:-36px;
+        background-color: white;
+        display: block;
+        
+      }
+    }
+  
+    &__submit{
+      z-index: 1;
+      position: absolute;
+      right: 40px;
+      top: -30px;
+      border-radius: 8px;
+      width: 28%;
+      line-height: 7px;
+      font-size: 8px;
+    
+    }
+  }
+}
+.success{
+  display: none;
+}
+.error{
+ display: none;
+}
+h2{
+    font-size: 16px;
+    color: red;
+    
+}

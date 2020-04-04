@@ -1,0 +1,36 @@
+
+.header{
+&__side {
+
+    &__links {
+     
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0px;
+      top: 16px;
+      padding-bottom: 20px;
+
+      &__item {
+        font-size: 12px;
+        transition-duration: 0.4s;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 2px solid #33373d;
+        color: #33373d;
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        border-radius: 25px;
+        margin-left: 5px;
+
+        &:hover {
+          border: 2px solid #cd5353;
+          color: #cd5353;
+        }
+      }
+    }
+  }
+}

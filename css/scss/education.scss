@@ -1,0 +1,103 @@
+
+
+
+
+/*--education & experiences-->*/
+.educations,.experiences{
+  padding: 27px;
+  &__holder{
+    margin-bottom: 40px;
+    margin-top: 37px;
+    margin-left: 0px;
+    position: relative;
+
+    &:before{
+      background: linear-gradient(to bottom, #ededed 1%,#ededed 75%,#ffffff 100%);
+      bottom: 0;
+      content: "";
+      left: 18px;
+      position: absolute;
+      top: -9px;
+      width: 2px;
+      height: 100%;
+
+    }
+
+    &__icon{
+     
+      position: absolute;
+      width: 40px;
+      border: 2px solid #efefef;
+      height: 40px;
+      top: -40px;
+      background-color: white;
+      left: -1px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50px;
+    }
+  
+    &__edu,&__exp{
+      padding-left: 48px;
+      padding-top: 20px;
+      position: relative;
+      margin-bottom: 10px;
+
+      &:after{
+        border-radius: 50px;
+        background: #cd5353;
+        border: 1px solid #ffffff;
+        content: "";
+        height: 8px;
+        left: 14px;
+        position: absolute;
+        text-align: center;
+        top: 25px;
+        width: 9px;
+      }
+
+      &__title{
+        text-transform: none;
+        margin-bottom: 0;
+        color: black;
+        font-size: 12px;
+        margin-bottom: 0; 
+        color: #484848;
+        width: 100%;
+        font-weight: 600;
+        font-family: 'open_sansbold',Arial,sans-serif;
+      }
+      &__date{
+        text-transform: none;
+        font-size: 12px;
+        color: #666666;
+        margin-top: 3px;
+        font-family: 'open_sansitalic',Arial,sans-serif;
+        font-weight: 300;
+        margin-bottom: -6px;
+        font-style: italic;
+      
+        &__web{
+          display: inline;
+          font-size: 10px;
+          &__current{
+            display: inline;
+            background-color: #cd5353;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 5px;
+          }
+        }
+      }
+      &__texte{
+        line-height: 16px;
+        color: #999;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+        font-weight: 300;
+        font-size: 11px;
+        
+      }
+    }
+  }
+}
+

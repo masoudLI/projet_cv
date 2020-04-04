@@ -1,0 +1,231 @@
+.content{
+  position: relative;
+  min-height: 1px;
+  background-color: white;
+  margin-top: -8px;
+  background-color: #ffffff;
+  padding-bottom: 60px;
+  margin-left: 15px;
+  margin-right: 17px;
+  display:none;
+
+}
+   
+
+.about {
+  padding: 27px;
+
+  &__top{
+    line-height: 22px;
+    margin-bottom: 30px;
+    
+    &__header{
+
+      &__arria{
+        float: left;
+        margin-left: -20px;
+        margin-top: 4px;
+        display: none;
+        &:hover{
+          cursor: pointer;
+          color: red;
+          display: block!important;
+
+          .about__top__header__arria__tooltiptext{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        &__tooltiptext{
+        
+          font-size: 13px;
+          visibility: hidden;
+          width: 85px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          top: 55px;
+          left: 65px;
+          margin-left: -60px;
+          opacity: 0;
+          transition: opacity 1s;
+          display: inline-block;
+          width: 12%;
+          &:after{
+            content: "";
+            position: absolute;
+            top: 108%;
+            left: 50%;
+            margin-left: -31px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+            }
+        }
+
+      }
+      &__title {
+        line-height: 25px;
+        text-transform: uppercase;
+        font-family: 'open_sansextrabold',Arial,sans-serif;
+        font-size: 19px;
+        font-weight:800;
+        margin-left: 10px;
+        margin: 0;
+        margin-top: 0;
+        color: #333333;
+        margin-bottom: 0;
+      }
+      &__subtitle{
+        line-height: 30px;
+        font-size: 15px;
+        color: #777777;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: 'open sans',Arial,sans-serif;
+        font-weight: 300;
+        margin-top: 0px;
+      }
+    }
+    &__header__descriptions{
+      display: block;
+    
+      &__description{
+        font-size: 13px;
+        color: #999;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        margin: 0; 
+        line-height: 17px;
+      
+        
+        
+      }
+    }
+      @media (min-width: 768px) {
+        &__header__descriptions{
+         display: flex;
+          &__description{
+          width: 60%;
+            &--right{
+            margin-left: 10px;
+          }
+        }
+      } 
+    }
+  } 
+
+
+  &__bottom {
+     &__table{
+      margin-bottom: 10px;
+      border: 1px solid #efefef;
+      border-left: 1px;
+      border-top: 1px;
+      border-bottom: 1px;
+      /* border-left: 0;
+      border: 1px solid #efefef;
+      border-top: 0;
+      text-align: center; */
+      
+
+      &__profil{
+        border-bottom: 1px solid #efefef;
+        text-align: center;
+        
+
+        &__label{
+          width: 100%;
+          font-family: 'Open Sans';
+          font-weight: 700;
+          border: 1px solid #efefef;
+          text-align: center;
+          display: inline-block;
+          padding: 8px 0;
+          /* border-left: 1px solid #efefef;
+          border-bottom: 1px solid #efefef; */
+          background-color: #ffffff;
+          color: #333333;
+          border-right: 0;
+          font-size: 12px;
+          border-right: 1px solid #efefef;
+        }
+        &__value{
+          background-color: #fafafa;
+          display: inline-block;
+          padding: 8px 0;
+          width: 100%;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 300;
+          color: #666666;
+          font-size: 11px;
+          border-left: 1px solid #efefef;
+          border-right: 1px solid #efefef;
+        }
+      }
+    }
+
+    @media (min-width: 480px) {
+      
+        
+        &__table{
+         
+          margin-bottom: 10px;
+          &__profil{
+            display: flex;
+            
+            &__label{
+              width: 50%;
+              border-bottom: 0;
+            }
+            &__value{
+              border-left: 0;
+              border-top: 1px solid #efefef;
+            
+            }
+          }
+        }
+      }
+    
+    
+    @media (min-width: 768px) {
+    
+      display: flex;
+      justify-content: space-between;
+
+  
+      &__table{
+        width: 48%;
+        border-right: 0;
+        
+        &__profil{
+         display: flex;
+          &__label{
+            width: 35%;
+          }
+          &__value{
+            
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  background-image: url(http://iwallpapers.free.fr/upload/2011/12/26/20111226191855-399cebc4.jpg);
+                     
+  background-color: transparent;
+}
+.row:after {
+  content: "";
+  clear:both;
+  display:table;
+}
+.section-bloc{
+  display: none;
+}
+.trai__scroll{
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 4px;
+  background-color:#cd5353;
+  z-index: 1;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-bottom: 30px;
+
+}
+  
+  @media (min-width: 480px) {
+    
+    width: 100%;
+  }
+  @media  (min-width: 768px) {
+    width: 760px;
+    padding:60px  0px 15px 0px;
+  }
+  
+}
+.section{
+  .icon-facebook {
+    margin-left: 11px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: 1px; 
+  }
+  .icon-twitter{
+    margin-left: 9px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: 1px;
+  }
+  .icon-linkedin{
+    margin-left: 10px;
+    line-height: 30px;
+    font-size: 12px;
+    margin-top: -1px; 
+  }
+  .icons{
+
+    width: 0;
+    height: 0px;
+    float: right;
+    clear: both;
+    margin-right: 60px;
+    position: fixed;
+    top: 465px;
+    right: 50px;
+    z-index: 1;
+    visibility: hidden;
+    &__item{
+      font-size: 12px;
+     // transition-duration: 0.4s;
+      margin-left: 10px;
+      margin-top: 10px;
+      border: 0px solid #33373d;
+      color: white;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      margin-left: 5px;
+      border-radius: 25px;
+      background-color: #A9A9A9;
+      transition-property: color, background-color;
+        &--fac:hover {
+          background-color: rgb(71, 126, 218);
+        }
+        &--twit:hover{
+          background-color:#00FFFF;
+        }
+        &--link:hover{
+          background-color:#007bb6 !important;
+        }
+      
+      &:hover {
+       // border: 2px solid #cd5353;
+        color:  white;
+        /* background-color:#00FFFF; */
+           
+        .icons__item__text__arria__tooltiptext{
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .icons--fac{
+          background-color: rgb(71, 126, 218);
+        }
+        .icons--twit{
+          background-color:#00FFFF;
+        }
+        .icons--link{
+          background-color: #007bb6 !important;
+        }
+      }
+    }
+    .icons__item__text__arria__tooltiptext{
+        
+      font-size: 13px;
+      /* visibility: hidden; */
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: -15px;
+      left: 10%;
+      margin-left: -105px;
+      opacity: 0;
+      transition: opacity 1s;
+      visibility: visible;
+      display: inline-block;
+      padding: 0px -13px;
+      height: 30px;
+      width: 140px;
+      transform: rotate(0deg);
+      top: -35px;
+      
+      &:after{
+        content: "";
+        position: absolute;
+        top: 112%;
+        left: 50%;
+        margin-left: 50px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+    }
+  }
+  .apparai {
+    visibility: visible;
+    animation-duration: 3s;
+    animation-name: apparai;
+  }
+
+  .disparai {
+    visibility: hidden;
+    animation-duration: 1s;
+    
+  }
+}
+
+

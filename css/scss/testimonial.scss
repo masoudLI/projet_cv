@@ -1,0 +1,165 @@
+/*TESTIMONIAL*/
+
+
+.testimonials{
+  padding: 27px;
+  margin-bottom: 40px;
+  &__wrapper{
+    border-radius: 10px;
+    padding: 25px;
+    overflow: hidden;
+    background-color: #efefef;
+  }
+  .slick-dots{
+    position: inherit;
+  }
+  .slick-dots li button:before{
+    font-size: 12px;
+    color: #efefef;
+    opacity: 1;
+  }
+  
+  .slick-dots li.slick-active button:before{
+    color: red;
+  }
+  .slick-dots li{
+    margin: 0;
+  }
+  .slick-next{
+  top: 60%;
+  right: -32px;
+    
+  }
+  .slick-prev{
+    left: -33px;
+    top: 61%;
+
+  }
+  &__list{
+    display: flex;
+    
+    transform: translate3d(0px, 0px, 0px);
+
+    &__item{
+      margin-right: 30px;
+      width: 252px;
+      &__imag{
+          
+          display: none;
+          &__quote{
+            width: 85px;
+            height: 85px;
+            border:10px solid #ffffff;
+            top: 7px;
+            position: absolute;
+            right: -85px;
+            border-radius: 50px;
+            display: none;
+            
+          }
+
+        }
+        &__ico{
+          background: #efefef;
+          border: 5px solid #ffffff;
+          font-size: 16px;
+          height: 40px;
+          line-height: 32px;
+          text-align: center;
+          width: 40px;
+          position: absolute;
+          right: -18px;
+          top: 120px;
+          color: #777777;
+          display: none;
+        
+
+        }
+
+      &__title{
+        text-align: left;
+        font-family: 'open_sansbold',Arial,sans-serif;
+        color: #333333;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 12px;
+       
+        &__role{
+          font-size: 12px;
+          color: #666666;
+        }
+        &__company{
+          text-align: left;
+          
+          margin-top: 5px;
+          margin-top: 8px;
+        }
+      }
+      &__text{
+        font-size: 14px;
+        color: #666666;
+        line-height: 20px;
+        font-family: 'open_sanslight_italic',Arial,sans-serif;
+        color: #999;
+        font-weight: 300;
+        font-style: italic;
+        margin: 0px;
+      }
+    }
+  }
+
+
+
+  &__pagination{
+
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &__wrapper{
+      cursor: pointer;
+      display: flex;
+      justify-content:center;
+    }
+    &__puce{
+      display: block;
+      width: 9px;
+      height: 9px;
+      margin: 10px 3px;
+      border-radius: 20px;
+      background: #efefef;
+      &:hover{
+        background-color:#cd5353;
+        transition: all 400ms ease;
+
+      }
+
+      &--active{
+        background-color: #cd5353;
+        display: block;
+        border-radius: 20px;
+        margin: 10px 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .testimonials{
+  
+    &__wrapper{
+   
+    }
+    &__list{
+      &__item{
+        
+        &__imag{
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+
